@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
 
 class Reloj extends Component{
-    constructor(props){
-        super(props)
-    }
+    // constructor(props){
+    //     super(props)
+    // }
 
     componentWillUnmount(){
         console.log(3, 'El componente ha sido Eliminate of DOM')
@@ -17,7 +17,7 @@ class Reloj extends Component{
 export default class CicloVida extends Component{
     constructor(props){
         super(props)
-        console.log(0, 'El Componente se inicializa, aun NO esta en el DOM')
+        // console.log(0, 'El Componente se inicializa, aun NO esta en el DOM')
 
         this.state = {
             hora: new Date().toLocaleTimeString(),
@@ -28,13 +28,13 @@ export default class CicloVida extends Component{
     }
 
     componentDidMount(){
-        console.log(1, 'El componente ya se encuentra en el DOM')
+        // console.log(1, 'El componente ya se encuentra en el DOM')
     }
 
     componentDidUpdate(prevProps, prevState){
-        console.log(2, 'El Estado o las props del  componente han cambiado')
-        console.log(prevProps)
-        console.log(prevState)
+        // console.log(2, 'El Estado o las props del  componente han cambiado')
+        // console.log(prevProps)
+        // console.log(prevState)
     }
 
     ticTac = () =>{
@@ -60,7 +60,7 @@ export default class CicloVida extends Component{
     }
 
     render(){
-        console.log(4, 'El Componente se dibuja (o redibuja por algun cambio)en el DOM')
+        // console.log(4, 'El Componente se dibuja (o redibuja por algun cambio)en el DOM')
         return(
             <>
                 <h2>Ciclo de Vida class Components</h2>

@@ -11,6 +11,8 @@ import {EventosES6, EventosES7, MasSobreEventos} from "./components/Eventos";
 import CicloVida from "./components/CicloVida";
 import AjaxApis from "./components/AjaxApis";
 import ContadorHooks from "./components/ContadorHooks";
+import ScrollHooks from "./components/ScrollHooks";
+import RelojHooks from "./components/RelojHooks"; 
 
 function App() {
   return (
@@ -65,6 +67,10 @@ function App() {
           <AjaxApis />
           <hr />
           <ContadorHooks title="Seguidores"/>
+          <hr />
+          <ScrollHooks />
+          <hr />
+          <RelojHooks />
         </section>
       </header>
     </div>
